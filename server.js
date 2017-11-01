@@ -51,6 +51,12 @@ app.get("/bad", (req,res) => {
    }) ;
 });
 
+app.get("/projects", (req,res) => {
+   res.render("projects.hbs", {
+       pageTitle: "Projects"
+   }); 
+});
+
 app.listen(process.env.PORT, process.env.IP, () => {
     console.log("Server is running");
 });
